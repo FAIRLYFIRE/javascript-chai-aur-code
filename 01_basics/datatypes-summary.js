@@ -27,3 +27,24 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+// /////////////////////////////////////////////
+
+// Stack(Primitive)->copy of variables, Heap(Non-Primitive)->reference of original value
+
+let myBestieName = "Bunny"
+let anotherName = myBestieName
+anotherName = "abc"
+
+console.log(anotherName);
+console.log(myBestieName);
+
+let userOne = {
+    email: 'firstuser@mail.com',
+    upi: 'user1@bank'
+}
+
+let userTwo = userOne
+userTwo.email = 'seconduser@mail.com'
+console.log(userOne);
+console.log(userTwo);
